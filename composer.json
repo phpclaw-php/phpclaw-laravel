@@ -96,38 +96,6 @@
         }
     },
     "minimum-stability": "stable",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../core",
-            "options": {
-                "symlink": false,
-                "versions": {
-                    "phpclaw/phpclaw": "0.1.0"
-                }
-            }
-        },
-        {
-            "type": "path",
-            "url": "../cloud",
-            "options": {
-                "symlink": false,
-                "versions": {
-                    "phpclaw/phpclaw-cloud": "0.1.0"
-                }
-            }
-        },
-        {
-            "type": "path",
-            "url": "../mcp",
-            "options": {
-                "symlink": false,
-                "versions": {
-                    "phpclaw/phpclaw-mcp": "0.1.0"
-                }
-            }
-        }
-    ],
     "prefer-stable": true,
     "config": {
         "platform": {
@@ -135,7 +103,9 @@
         },
         "policy": {
             "advisories": {
-                "ignore": ["laravel/framework"]
+                "ignore": [
+                    "laravel/framework"
+                ]
             }
         }
     }
